@@ -4,7 +4,11 @@
  * @param {Object} store - An object representing a single store. See the instructions for details on its shape.
  * @returns {Object[]} The same `stores` array that was inputted.
  */
-function addNewStore(stores, store) {}
+function addNewStore(stores, store) {
+  stores.push(store)
+  return stores
+}
+
 
 /**
  * Removes a store object at the given position.
@@ -12,7 +16,9 @@ function addNewStore(stores, store) {}
  * @param {number} index - A number representing the index of the store to be removed from the array.
  * @returns {Object[]} The same `stores` array that was inputted.
  */
-function removeStoreAtPosition(stores, index) {}
+function removeStoreAtPosition(stores, index) {
+  
+}
 
 /**
  * Creates a duplicate of the `store` object. No references should be shared between the inputted `store` and the result.
