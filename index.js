@@ -19,7 +19,7 @@ function addNewStore(stores, store) {
 function removeStoreAtPosition(stores, index) {
   stores.splice(index,1)
   return stores
-  
+
 }
 
 /**
@@ -27,7 +27,13 @@ function removeStoreAtPosition(stores, index) {
  * @param {Object} store - An object representing a single store. See the instructions for details on its shape.
  * @returns {Object} The duplicated store object. This should not be the same as the store that was inputted.
  */
-function duplicateStore(store) {}
+function duplicateStore(store) {
+  
+  let newArray=Object.assign({},store)
+  newArray.boardGames=[...store.boardGames]
+  newArray.address=Object.assign({},store.address)
+  return newArray
+}
 
 module.exports = {
   addNewStore,
