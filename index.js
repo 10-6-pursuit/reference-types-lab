@@ -16,11 +16,11 @@ return stores
  * @returns {Object[]} The same `stores` array that was inputted.
  */
 function removeStoreAtPosition(stores, index) {
-
-  
- 
+  stores.splice(index,1)
   return stores
 }
+
+ 
 
 /**
  * Creates a duplicate of the `store` object. No references should be shared between the inputted `store` and the result.
@@ -29,6 +29,12 @@ function removeStoreAtPosition(stores, index) {
  */
 function duplicateStore(store) {
   
+  const newObj = {...store}
+  newObj.boardGames = [...store.boardGames]
+  newObj.address = {...store.address}
+
+  return newObj;
+
 }
 
 module.exports = {
