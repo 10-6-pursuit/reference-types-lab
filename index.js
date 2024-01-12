@@ -28,7 +28,7 @@ function removeStoreAtPosition(stores, index) {
  * @returns {Object} The duplicated store object. This should not be the same as the store that was inputted.
  */
 function duplicateStore(store) {
-  const newStore = {...store}; 
+  newStore = {...store}; 
   newStore.boardGames = [...newStore.boardGames];
   newStore.address = {...newStore.address};
   return newStore;
