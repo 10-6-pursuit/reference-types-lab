@@ -16,7 +16,7 @@ function addNewStore(stores, store) {
  * @returns {Object[]} The same `stores` array that was inputted.
  */
 function removeStoreAtPosition(stores, index) {
-    delete stores[index];
+     stores.splice(index, 1);
     return stores;
 }
 
@@ -25,7 +25,14 @@ function removeStoreAtPosition(stores, index) {
  * @param {Object} store - An object representing a single store. See the instructions for details on its shape.
  * @returns {Object} The duplicated store object. This should not be the same as the store that was inputted.
  */
-function duplicateStore(store) {}
+function duplicateStore(store) {
+  // const copiedObj = {...store};
+  //  copiedObj.boardGames = [...store.boardGames];
+  //  copiedObj.address = {...store.address};
+  // return copiedObj; 
+  const copiedObj = structuredClone(store);
+  return copiedObj;
+}
 
 module.exports = {
   addNewStore,
