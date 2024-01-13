@@ -8,7 +8,7 @@ function addNewStore(stores, store) {
 
   stores.push(store);
 
-  return [...stores];
+  return stores;
   
 }
 
@@ -22,7 +22,7 @@ function removeStoreAtPosition(stores, index) {
 
   stores.splice(index, 1);
 
-  return [...stores];
+  return stores;
 
 }
 
