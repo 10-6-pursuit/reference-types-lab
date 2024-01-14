@@ -6,6 +6,8 @@
  */
 function addNewStore(stores, store) {}
 
+const store = 
+
 /**
  * Removes a store object at the given position.
  * @param {Object[]]} stores - An array of store objects.
