@@ -32,17 +32,17 @@ function removeStoreAtPosition(stores, index) {
  */
 function duplicateStore(store) {
   
-  const arr = {...store};
+  const obj = {...store};
   
-  arr.boardGames = [...store.boardGames];
+  obj.boardGames = [...store.boardGames];
 
-  arr.address = {...store.address}; 
+  obj.address = {...store.address}; 
 
-  return arr; 
+  return obj; 
 
 }
 
-duplicateStore({boardGames: [1,2,3]}, 1,2,3,4,5)
+//duplicateStore({boardGames: [1,2,3]}, 1,2,3,4,5)
 
 
 
