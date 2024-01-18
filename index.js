@@ -43,6 +43,15 @@ function duplicateStore(store) {
   return copiedObj;
 }
 
+// function duplicateStore(store) {
+//   const newStore = {
+//     ...store,
+//     boardGames: [...store.boardGames],
+//     address: { ...store.address },
+//   };
+//   return newStore;
+// }
+
 module.exports = {
   addNewStore,
   removeStoreAtPosition,
